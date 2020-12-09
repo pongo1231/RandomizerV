@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Memory\Handle.h" />
+    <ClInclude Include="Memory\Memory.h" />
+    <ClInclude Include="Memory\Hook.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="Macros.h" />
+    <ClInclude Include="NativesNoNamespaces.h" />
+    <ClInclude Include="Memory\VehicleHelpers.h" />
+    <ClInclude Include="Memory\Model.h" />
+    <ClInclude Include="SharedHooks\Vehicle.h" />
+    <ClInclude Include="Memory\WeaponHelpers.h" />
+    <ClInclude Include="Utils\Random.h" />
+    <ClInclude Include="Utils\OptionsFile.h" />
+    <ClInclude Include="Utils\TryParse.h" />
+    <ClInclude Include="Utils\OptionsManager.h" />
+    <ClInclude Include="Utils\Hash.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Memory\Memory.cpp" />
+    <ClCompile Include="Memory\Hook.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Randomizers\HUDColors.cpp" />
+    <ClCompile Include="Randomizers\AudioBanks.cpp" />
+    <ClCompile Include="Randomizers\VehicleModels.cpp" />
+    <ClCompile Include="Randomizers\VehicleUpgrades.cpp" />
+    <ClCompile Include="Randomizers\PedWeapons.cpp" />
+    <ClCompile Include="Utils\OptionsFile.cpp" />
+    <ClCompile Include="Randomizers\Labels.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\vendor\minhook\build\VC15\lib\Release\libMinHook.x64.lib" />
+    <Library Include="..\vendor\scripthookv\lib\ScriptHookV.lib" />
+  </ItemGroup>
+</Project>
